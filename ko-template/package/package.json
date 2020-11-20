@@ -1,0 +1,13 @@
+﻿{
+  "name": "ko.fhir.template",
+  "version": "0.1.0",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "SE FHIR Template",
+  "author": "http://hejsanhoppsan.se",
+  "canonical": "http://hejsanhoppsan.se/fhir/ko.fhir.template",
+  "base": "fhir.base.template",
+  "dependencies": {
+      "fhir.base.template": "current"
+  }
+}
