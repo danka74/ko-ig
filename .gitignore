@@ -6,6 +6,5 @@ publisher.jar
 /output/
 /temp/
 /template/
-ig.ini
 package-list.json
 .index.json
