@@ -1,7 +1,8 @@
 ValueSet: ChiefComplaintValueSet
 Title: "Chief Complaint Value Set"
 Id: chief-complaint
-Description: "Codes describing the patient's reason for a request for care, taken from SNOMED-CT."
+Description: """Codes describing the patient's reason for a request for care, taken from SNOMED-CT. 
+Consumer-friendly terms for this ValueSet are available in the language reference set http://snomed.info/sct/45991000052106/id/64311000052107"""
 * insert SEStandardRuleSet
 * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in "60001000052100"
 
