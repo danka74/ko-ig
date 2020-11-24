@@ -14,6 +14,7 @@ Description: "A demand for care as stated by a patient."
 * reasonCode 1..*
 * reasonCode from ChiefComplaintValueSet (extensible)
 * requester only Reference(Patient or RelatedPerson)
+* subject only Reference(Patient)
 
 Mapping: DemandForCareNI
 Source: DemandForCare
