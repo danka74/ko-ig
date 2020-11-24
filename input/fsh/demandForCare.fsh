@@ -4,6 +4,7 @@ Id: chief-complaint
 Description: "Codes describing the patient's reason for a request for care, taken from SNOMED-CT."
 * insert SEStandardRuleSet
 * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in "60001000052100"
+// consumer-friendly terms for this ValueSet are available in the language reference set 64311000052107
 
 Profile: DemandForCare
 Parent: ServiceRequest
