@@ -13,7 +13,7 @@ Id: ko-composition
 * section[chiefComplaint].code.coding.system = "http://snomed.info/sct"
 * section[chiefComplaint].code.coding.code = #123456789
 * section[chiefComplaint].code.coding.display = "Kontaktorsak"
-* section[chiefComplaint].entry  only Reference(DemandForCare)
+* section[chiefComplaint].entry  only Reference(DemandForCareStatedByPatientOrThirdParty)
 
 * section[anObservation].code.coding.userSelected = false
 * section[anObservation].code.coding.system = "http://snomed.info/sct"

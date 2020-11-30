@@ -6,20 +6,21 @@ Consumer-friendly terms for this ValueSet are available in the language referenc
 * insert SEStandardRuleSet
 * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in "60001000052100"
 
-Profile: DemandForCare
+rofile: DemandForCareStatedByPatientOrThirdParty
 Parent: ServiceRequest
-Id: demand-for-care
+Id: demand-for-care-stated-by-patient-or-third-party
 Title: "Demand For Care"
-Description: "A demand for care as stated by a patient."
+Description: "A demand for care as stated by a patient or a third party. Only one reason per demand for care."
 * insert SEStandardRuleSet
-* reasonCode 1..*
+* intent = #directive // the exact value for intent must be confirmed
+* reasonCode 0..1
 * reasonCode from ChiefComplaintValueSet (extensible)
 * requester only Reference(Patient or RelatedPerson)
 * subject only Reference(Patient)
 
-Mapping: DemandForCareNI
-Source: DemandForCare
-Target: "https://informationsstruktur.socialstyrelsen.se/nim/hos/NIM-Vardbegaran-for-egen-rakning"
+Mapping: DemandForCareStatedByPatientOrThirdPartyNI
+Source: DemandForCareStatedByPatientOrThirdParty
+Target: "http://informationsstruktur.socialstyrelsen.se/nim/hos/NIM-Vårdbegäran-för-egen-räkning"
 Title: "NIM Vårdbegäran för egen räkning"
 Id: ni-nim-vardbegaran-for-egen-rakning
 * -> "Vårdbegäran"
