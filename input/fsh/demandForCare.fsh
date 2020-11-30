@@ -6,7 +6,7 @@ Consumer-friendly terms for this ValueSet are available in the language referenc
 * insert SEStandardRuleSet
 * codes from system http://snomed.info/sct|http://snomed.info/sct/45991000052106 where concept in "60001000052100"
 
-rofile: DemandForCareStatedByPatientOrThirdParty
+Profile: DemandForCareStatedByPatientOrThirdParty
 Parent: ServiceRequest
 Id: demand-for-care-stated-by-patient-or-third-party
 Title: "Demand For Care"
