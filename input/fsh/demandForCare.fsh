@@ -12,11 +12,15 @@ Id: demand-for-care-stated-by-patient-or-third-party
 Title: "Demand For Care"
 Description: "A demand for care as stated by a patient or a third party. Only one reason per demand for care."
 * insert SEStandardRuleSet
-* intent = #directive // the exact value for intent must be confirmed
+* intent = #original-order // the exact value for intent must be confirmed
 * reasonCode 0..1
 * reasonCode from ChiefComplaintValueSet (extensible)
 * requester only Reference(Patient or RelatedPerson)
 * subject only Reference(Patient)
+* patientInstruction 0..0
+* doNotPerform 0..0
+* quantity[x] 0..0
+
 
 Mapping: DemandForCareStatedByPatientOrThirdPartyNI
 Source: DemandForCareStatedByPatientOrThirdParty
